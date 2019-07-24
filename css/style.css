@@ -50,6 +50,20 @@ img {
 	margin-right: auto;
 }
 
+/* elemento que tiene un id, mezcla los atributos de etiqueta con id, sobreescribe los asignados al id */
+#foto-polaroid {
+
+	margin: 15px auto 15px auto;
+	width: 150px;
+	border-left: solid 15px #FFFFFF;
+	border-right: solid 15px #FFFFFF;
+	border-top: solid 15px #FFFFFF;
+	border-bottom: solid 45px #FFFFFF;
+
+
+
+}
+
 
 
 
