@@ -1,0 +1,70 @@
+/* Estilos generales */
+
+body {
+	font-family: "Helvetica", "Arial", "Open Sans", sans-serif;
+	font-size: 18px;
+	color: #2b2626;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #178aff;
+}
+
+h1 {
+	font-family: "Tahoma";
+	color: darkviolet;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+span {
+	color: red;
+}
+
+/* saco subrrayado del vinculo y cambio el color*/
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #2b2626;
+	padding-left: 3px;
+	padding-right: 3px;
+
+}
+
+a:hover {
+	color: grey;
+	background-color: #FFFFFF;
+}
+
+p {
+	text-align: justify;
+	/* interlineado */
+	line-height: 1.5;
+}
+
+img {
+	/* display hace que la imagen se vea como caja, aplica a cualquier etiqueta  */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* elemento que tiene un id, mezcla los atributos de etiqueta con id, sobreescribe los asignados al id */
+#foto-polaroid {
+
+	margin: 15px auto 15px auto;
+	width: 150px;
+	border-left: solid 15px #FFFFFF;
+	border-right: solid 15px #FFFFFF;
+	border-top: solid 15px #FFFFFF;
+	border-bottom: solid 45px #FFFFFF;
+
+
+
+}
+
+
+
+
+
