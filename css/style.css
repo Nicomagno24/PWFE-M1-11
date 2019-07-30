@@ -1,0 +1,47 @@
+
+
+body {
+	font-family: "Arial";
+	font-size: 14px;
+	color: #171717;
+	margin: 0;
+}
+
+header {
+	background-color: #171717;
+}
+
+/* el h1 que esta dentro del header: header h1 {}*/
+header h1 {
+	margin: 0;
+	color: #D9D9D9;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+header a {
+	text-decoration: none;
+	color: #D9D9D9;
+}
+
+nav ul {
+	list-style-type: none; /* estilo del item de la lista */
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block; /* los paso a elementos de linea-bloque para que se vean en horizontal */
+}
+
+nav ul li a {
+	padding: 10px;
+}
+
+nav ul li a:hover {
+	background-color: #D9D9D9;
+	color: #171717;
+}
