@@ -9,12 +9,19 @@ body {
 
 header {
 	background-color: #171717;
+	position: relative;
+	padding: 10px;
+	overflow: hidden; /* agregado para devolver el header */
 }
 
 /* el h1 que esta dentro del header: header h1 {}*/
 header h1 {
 	margin: 0;
 	color: #D9D9D9;
+	float: left;  /* agregado para alinear a la derecha */
+	background-image: url("../img/logo.png"); /* imagen de fondo (logo), con o sin comillas funciona */
+	background-repeat: no-repeat; /* donde repite la imagen */
+	padding-left: 75px;
 }
 
 a {
@@ -31,10 +38,12 @@ nav ul {
 	list-style-type: none; /* estilo del item de la lista */
 	margin: 0;
 	padding: 0;
+	float: right; /* agregado para alinear a la derecha */
 }
 
 nav ul li {
 	display: inline-block; /* los paso a elementos de linea-bloque para que se vean en horizontal */
+	padding-top: 10px; /* agregado para nivelar con el logo */
 }
 
 nav ul li a {
