@@ -5,10 +5,12 @@ body {
 	font-size: 14px;
 	color: #171717;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 header {
 	background-color: #171717;
+	width: 100%;
 	position: relative;
 	padding: 10px;
 	overflow: hidden; /* agregado para devolver el header */
@@ -22,6 +24,7 @@ header h1 {
 	background-image: url("../img/logo.png"); /* imagen de fondo (logo), con o sin comillas funciona */
 	background-repeat: no-repeat; /* donde repite la imagen */
 	padding-left: 75px;
+	display: block;
 }
 
 a {
@@ -60,13 +63,75 @@ img {
 	width: 100%;
 }
 
+#noticias-destacadas {
+	width: calc(100vw * 3); /* funcion calc() de calculo. para todos los elementos que tengan unidad de medida */
+	background-color: #171717;
+	overflow: hidden;
+	position: relative;
+	animation: 15s slider infinite; /* tiempo, que animacion, que hacer despues */
+}
+
+
+#noticias-destacadas figure {
+	width: 100vw;
+	float: left;
+	
+}
+
 #noticias-destacadas figcaption {
-	background-color: black;
+	background-color: #171717;
 	padding: 20px;
 }
 
 #noticias-destacadas figcaption h2 {
 	color: white;
-	font-size: 30px;
+	font-size: 42px;
 	font-weight: 700;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* animaciones css */
+
+@keyframes slider {
+
+	0% {
+		left: 0;
+	}
+
+	20% {
+		left: 0;
+	}
+
+	40% {
+		left: -100vw;
+	}
+	
+	60% {
+		left: -100vw;
+	}
+
+	80% {
+		left: -200vw;
+	}
+
+	90% {
+		left: -200vw;
+	}
+
+	100%{
+		left: 0;
+	}
+
+}
+
+
