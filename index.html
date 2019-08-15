@@ -7,6 +7,9 @@
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
 		<link rel="stylesheet"  href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 
@@ -48,10 +51,10 @@
 
 
 		<!-- etiqueta main para el cotenido principal de la pagina, lo que no sea header ni footer -->
-		<main>
+		<main class="container-fluid">
 			
 			<!-- secciones -->
-			<section id="noticias-destacadas">
+			<section id="noticias-destacadas" class="row">
 
 				<!-- destacada #1 -->				
 				<figure>
@@ -91,35 +94,38 @@
 
 			</section>
 
+			<section id="ultimas-noticias" class="row">
 
-			<section id="ultimas-noticias">
-				
 				<!-- noticia #1 -->
-				<article class="noticia">
+				<article class="py-3 noticia">
 
-					<div class="noticia-img">
-						<img src="img/sorteo-libertadores.jpg">
-					</div>
 
-					<div class="noticia-txt">
+				<div class="row">
+
+					<div class="noticia-img col-lg-4" >	<img src="img/sorteo-libertadores.jpg" class="img-fluid"> </div>
+
+					<div class="noticia-txt col-lg-8">
 						<h3>La tecnología llega a la actual edición de la Libertadores</h3>
 
 						<p>por <a href="">Joaquín Angeli</a></p>
 
-						<p class="texto-noticia">La Conmebol anunció la implementación del sistema VAR (asistencia arbitral por video) desde las semifinales de la actual Libertadores.</p>
+						<p>La Conmebol anunció la implementación del sistema VAR (asistencia arbitral por video) desde las semifinales de la actual Libertadores.</p>
 
-					</div>				
+					</div>
+
+				</div>				
 					
 				</article>
 
-
 				<article class="noticia">
 
-					<div class="noticia-img">
-						<img src="img/tickets-rusia-mundial.jpg">
+				<div class="row">
+					
+					<div class="noticia-img col-lg-4">
+						<img src="img/tickets-rusia-mundial.jpg" class="img-fluid">
 					</div>
 
-					<div class="noticia-txt">
+					<div class="noticia-txt col-lg-8">
 						<h3>Comenzó la venta de entradas para el Mundial de Rusia 2018</h3>
 
 						<p>por <a href="">Laura Smasnatta</a></p>
@@ -128,16 +134,19 @@
 
 					</div>				
 					
+				</div>	
 				</article>
 
 
 				<article class="noticia">
 
-					<div class="noticia-img">
-						<img src="img/firpo.jpg">
+				<div class="row">
+					
+					<div class="noticia-img col-lg-4">
+						<img src="img/firpo.jpg" class="img-fluid">
 					</div>
 
-					<div class="noticia-txt">
+					<div class="noticia-txt col-lg-8">
 						<h3>A 94 años del derechazo que convirtió en leyenda a Luis Ángel Firpo</h3>
 
 						<p>por <a href="">Diego Di Marco</a></p>
@@ -146,29 +155,31 @@
 
 					</div>				
 					
+				</div>
 				</article>
 
 
 				<article class="noticia">
 
-					<div class="noticia-img">
-						<img src="img/buenos-aires.jpg">
+				<div class="row">
+				
+					<div class="noticia-img col-lg-4">
+						<img src="img/buenos-aires.jpg" class="img-fluid">
 					</div>
 
-					<div class="noticia-txt">
+					<div class="noticia-txt col-lg-8">
 						<h3>Buenos Aires 2018 presentó su innovador proyecto de parques y de ceremonia inaugural ante el COI.</h3>
 
 						<p>por <a href=""> <strong>Melina Morales</strong></a></p>
 
 						<p class="texto-noticia">El Comité Organizador de los Juegos de la Juventud presentó su concepto de parques ante la 131a sesión del Comité Olímpico Internacional (COI) que se realizó en Lima. La ceremonia inaugural se realizará al aire libre.</p>
 
-					</div>				
-					
+					</div>
+
+				</div>	
 				</article>
 
 			</section>
-
-
 
 			<section id="tabla-posiciones">
 				

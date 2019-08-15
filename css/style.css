@@ -57,11 +57,13 @@ nav ul li {
 
 nav ul li a {
 	padding: 10px;
+	text-decoration: none;
 }
 
 nav ul li a:hover {
 	background-color: #D9D9D9;
 	color: #171717;
+	text-decoration: none;
 }
 
 img {
@@ -96,11 +98,11 @@ img {
 }
 
 .noticia-img {
-	width: 30%;
+	width: 100%;
 }
 
 .noticia-txt {
-	width: 60%;
+	width: 100%;
 }
 
 .noticia {
@@ -189,11 +191,14 @@ footer {
 	color: #D9D9D9;
 	text-align: center;
 	margin-top: 20px;
-}
-
+	}
 
 
 /* poner iconos en el menu */
+
+
+
+
 
 
 
