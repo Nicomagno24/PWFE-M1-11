@@ -9,7 +9,6 @@
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
 		<link rel="stylesheet"  href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 
@@ -50,61 +49,152 @@
 		</header><!-- /header -->
 
 
+
+	<!-- nav de bootstrap --> 
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark float-none">
+  			<a class="navbar-brand" href="#">
+			
+			<img src="img/logo.png" class="d-inline-block align-top w-25" alt="img">DeporteXtremo</a>
+
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ 			   <span class="navbar-toggler-icon"></span>
+ 			</button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-center">
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Futbol <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">NBA <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Tenis <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Formula 1 <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Boxeo <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">JJOO <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Moto GP <span class="sr-only">(current)</span></a>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+		<!-- fin nav de bootstrap -->
+
+
 		<!-- etiqueta main para el cotenido principal de la pagina, lo que no sea header ni footer -->
 		<main class="container-fluid">
 			
 			<!-- secciones -->
 			<section id="noticias-destacadas" class="row">
 
-				<!-- destacada #1 -->				
-				<figure>
 
-					<img src="img/juegos-olimpicos.jpg" alt="">
-					<figcaption>
-						
-						<h2>Paris y Los Ángeles serán las próximas sedes de los Juegos Olímpicos.</h2>
-						
-					</figcaption>
-				
-				</figure>
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 
-				<!-- destacada #2 -->
-				<figure>
+		            <!-- indicadores -->
+		            <ol class="carousel-indicators">
+		                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		                  </ol>
+		            <!-- indicadores -->
 
-					<img src="img/f1.jpg" alt="">
-					<figcaption>
-						
-						<h2>Ricciardo marcó el ritmo en los libres de Azerbaiyán.</h2>
-						
-					</figcaption>
-				
-				</figure>
+			        <!-- carousel -->          
+			        <div class="carousel-inner">
+			          
+			          <div class="carousel-item active">
 
-				<!-- destacada #3 -->
-				<figure>
+						<figure>
 
-					<img src="img/rally.jpg" alt="">
-					<figcaption>
-						
-						<h2>En Córdoba arrancó la 1er etapa del 38° Rally de la Argentina.</h2>
-						
-					</figcaption>
-				
-				</figure>
+								<img src="img/juegos-olimpicos.jpg" class="d-block w-100" alt="">
+								<figcaption>
+									
+									<h2>Paris y Los Ángeles serán las próximas sedes de los Juegos Olímpicos.</h2>
+									
+								</figcaption>
+							
+							</figure>
+
+			          </div>
+
+			          <div class="carousel-item">
+
+						<figure>
+
+								<img src="img/f1.jpg" class="d-block w-100" alt="">
+								<figcaption>
+									
+									<h2>Ricciardo marcó el ritmo en los libres de Azerbaiyán.</h2>
+									
+								</figcaption>
+							
+							</figure>
+
+			          </div>
+
+			          <div class="carousel-item">
+			            
+							<figure>
+
+								<img src="img/rally.jpg"  class="d-block w-100" alt="">
+								<figcaption>
+									
+									<h2>En Córdoba arrancó la 1er etapa del 38° Rally de la Argentina.</h2>
+									
+								</figcaption>
+							
+							</figure>
+			          </div>
+
+			        </div>
+			        <!-- carousel -->
+
+
+<!-- controles -->
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+<!-- controles -->
+
+      </div>
 
 			</section>
 
+
+			<div class="container-fluid">
+			
 			<section id="ultimas-noticias" class="row">
 
 				<!-- noticia #1 -->
-				<article class="py-3 noticia">
+				<article class="py-3 col-12 col-md-6">
 
 
 				<div class="row">
 
-					<div class="noticia-img col-lg-4" >	<img src="img/sorteo-libertadores.jpg" class="img-fluid"> </div>
+					<div class="col-12 col-md-4" >	<img src="img/sorteo-libertadores.jpg" class="img-fluid"> </div>
 
-					<div class="noticia-txt col-lg-8">
+					<div class="col-12 col-md-8">
 						<h3>La tecnología llega a la actual edición de la Libertadores</h3>
 
 						<p>por <a href="">Joaquín Angeli</a></p>
@@ -117,15 +207,15 @@
 					
 				</article>
 
-				<article class="noticia">
+				<article class="col-12 col-md-6">
 
 				<div class="row">
 					
-					<div class="noticia-img col-lg-4">
+					<div class="col-12 col-md-4">
 						<img src="img/tickets-rusia-mundial.jpg" class="img-fluid">
 					</div>
 
-					<div class="noticia-txt col-lg-8">
+					<div class="col-12 col-md-8">
 						<h3>Comenzó la venta de entradas para el Mundial de Rusia 2018</h3>
 
 						<p>por <a href="">Laura Smasnatta</a></p>
@@ -138,15 +228,15 @@
 				</article>
 
 
-				<article class="noticia">
+				<article class="col-12 col-md-6">
 
 				<div class="row">
 					
-					<div class="noticia-img col-lg-4">
+					<div class="col-12 col-md-4">
 						<img src="img/firpo.jpg" class="img-fluid">
 					</div>
 
-					<div class="noticia-txt col-lg-8">
+					<div class="col-12 col-md-8">
 						<h3>A 94 años del derechazo que convirtió en leyenda a Luis Ángel Firpo</h3>
 
 						<p>por <a href="">Diego Di Marco</a></p>
@@ -159,15 +249,15 @@
 				</article>
 
 
-				<article class="noticia">
+				<article class="col-12 col-md-6">
 
 				<div class="row">
 				
-					<div class="noticia-img col-lg-4">
+					<div class="col-12 col-md-4">
 						<img src="img/buenos-aires.jpg" class="img-fluid">
 					</div>
 
-					<div class="noticia-txt col-lg-8">
+					<div class="col-12 col-md-8">
 						<h3>Buenos Aires 2018 presentó su innovador proyecto de parques y de ceremonia inaugural ante el COI.</h3>
 
 						<p>por <a href=""> <strong>Melina Morales</strong></a></p>
@@ -180,7 +270,7 @@
 				</article>
 
 			</section>
-
+</div>
 			<section id="tabla-posiciones">
 				
 				<!-- tabla  -->
@@ -255,6 +345,13 @@
 
 
 		<script src="js/main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
 			
 	</body>
 </html>

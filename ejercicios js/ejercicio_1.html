@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="assets/normalize.min.css">
+		<link rel="stylesheet" href="assets/style.css">
+		<link rel="stylesheet" href="assets/extra.css">
+		<title>Aprender a programar con JavaScript</title>		
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<a href="ejercicio_1.html" class="active">Ejercicio 1</a>
+				<a href="ejercicio_2.html">Ejercicio 2</a>
+				<a href="ejercicio_3.html">Ejercicio 3</a>
+				<a href="ejercicio_4.html">Ejercicio 4</a>
+				<a href="ejercicio_5.html">Ejercicio 5</a>
+				<a href="ejercicio_6.html">Ejercicio 6</a>
+				<a href="ejercicio_7.html">Ejercicio 7</a>
+			</nav>
+		</header>
+
+		<section>
+			<h1>Aprender a programar con JavaScript</h1>
+		</section>
+
+		<aside>
+			<p>Crear un "asistente" que pida los siguientes datos de un producto:</p>
+			<ul>
+				<li>Nombre</li>
+				<li>Stock</li>
+				<li>Precio</li>
+				<li>Disponibilidad</li>
+			</ul>
+			<p>Mostrar un mensaje en el <code>&lt;article&gt;</code> que indique el cuanto valen y cuantas unidades hay de ese producto.</p>
+			
+
+			<article id="id_article">
+
+			
+
+			</article>
+		
+
+		</aside>
+
+
+		<script>
+		
+		/*
+		datos de origen determindos
+			var nombre = "cafe";
+			var precio = 85.6;
+			var stock = 500;
+			var disponible = true;
+
+			var precioFinal = precio*1.21
+
+			console.log(nombre);
+			console.log(precio);
+			console.log(stock);
+			console.log(disponible);
+
+			console.log("precio final: " + precioFinal);
+		*/
+
+		/*
+			datos de origen indeterminado por usuario
+
+		*/
+		//prompt() ingresa solo datos tipo texto
+
+		var nombre
+		var stock
+		var precio
+		var disponible
+
+		do{
+			nombre = prompt("nombre del producto:");
+		}while(nombre == "")
+
+		stock = prompt("ingrese stock")
+		precio = prompt("precio:")
+		disponible = confirm("disponible para venta?")
+
+		//stock = parseInt(stock) // reciclado de variable
+
+
+		while(stock == "" || stock < 0 || stock > 100 || isNaN(parseInt(stock))) {
+
+			if(stock == ""){
+				alert("Error: stock vacio")
+			}else if(stock < 0){
+				alert("Error: stock menor a cero")
+			}else if(stock > 100){
+				alert("Error: stock mayor a 100")
+
+			}else {
+				alert("error: es nan")
+			}
+
+			stock = prompt("ingrese stock nuevamente")
+
+		}
+
+
+		while(precio == "" || precio < 0 || isNaN( parseFloat(precio) ) ){
+
+			alert("error: ingrese el precio en numeros positivos")
+
+		}
+
+
+		if(disponible == undefined){
+			alert("error: debe especificar la disponibilidad")
+		}
+
+		var mensaje = "hay " + stock + " unidades de " + nombre + " que valen " + precio
+		var mensaje2 = `<p>hay ${stock} unidades de <strong>${nombre}</strong> que cuestan ${precioFinal} cada una</p>`  
+
+		 
+		var precioFinal = precio*1.21
+
+		mostrarMensaje();
+
+
+		function mostrarMensaje(){
+			
+			//para obtener documentos por etiquetas
+			document.querySelector("article").innerHTML = mensaje2	
+
+		}
+
+		</script>
+
+
+
+	</body>
+</html>
