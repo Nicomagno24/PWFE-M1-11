@@ -44,6 +44,30 @@
 			
 			//3) Manipulacion de Comportamiento
 			
+
+			var titulo = document.querySelector("h1")
+
+			
+
+			titulo.onClick = cambiarTitulo
+
+
+
+			function cambiarTitulo(){
+
+				titulo.innerText = "cambio de texto"
+				titulo.style.backgroundColor = "grey" 
+				titulo.title = "titulo de la etiqueta"
+
+			}
+
+
 		</script>
+
+
+
 	</body>
 </html>
+
+
+
