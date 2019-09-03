@@ -33,14 +33,37 @@
 		</aside>
 
 		<script>
+
+
+			let span = document.querySelector(".total")
+				
+			span.onclick = calcularIVA
+
 			function calcularIVA(){
-				/* 1) Seleccionar el campo numérico y guardarlo en una variable */
 
-				/* 2) Obtener el valor del campo */
+				let valor = document.getElementById("precio").value
 
-				/* 3) Escribir en el span el valor del campo + IVA */
+				let total = parseInt(valor)*1.21
 
-				/* 4) Si el valor con IVA es superior a 100 modificar el estilo del mensaje */
+				if(valor >= 0){
+					
+					span.innerText = total
+
+					console.log(total);
+
+					if(total > 100){
+						span.innerText = total
+						span.style.color = "red" 
+					}else{
+						span.style.color = null;
+					}
+
+
+				}else{
+					alert("ingresar valor mayor a cero")
+				}
+				
+
 			}
 		</script>
 	</body>

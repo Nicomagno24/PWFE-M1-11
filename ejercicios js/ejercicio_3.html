@@ -32,14 +32,42 @@
 			<p>Ejecutar la función utilizando la consola de desarrollador</p>
 		</aside>
 
+
+
+
+
 		<script>
+
+			
+			let span = document.querySelector(".total")
+
+			span.onclick = calcularIVA
+
+
 			function calcularIVA(){
 				/* 1) seleccionar el campo numérico y guardarlo en una variable */
 
 				/* 2) obtener el valor del campo */
 
 				/* 3) escribir en el span el valor del campo + IVA */
+
+				let valor = document.getElementById("precio").value
+
+
+				if(valor >= 0){
+
+					let total = parseInt(valor)*1.21
+
+					span.innerText = total
+
+					console.log(total);
+
+				}else{
+					alert("ingresar valor mayor a cero")
+				}
+				
 			}
+
 		</script>
 	</body>
 </html>

@@ -22,7 +22,7 @@
 		</header>
 
 		<section>
-			<h1>Calcular IVA</h1>
+			<h1>Filtrar habitaciones</h1>
 
 		<select name="habitacion">
 			<option value="0">Seleccione habitación</option>
@@ -58,22 +58,29 @@
 		</aside>
 
 		<script>
-			/* 1) Seleccionar todas las habitaciones */
 
-			/* 2) Seleccionar el select */
+			//selecciona todos los valores del selector: devuelve un array
+			let habitaciones = document.querySelectorAll(".habitacion") 
 
-			/* 3) Asignar la funcion mostrarOpcion al evento correspondiente */
+			let menu = document.querySelector("select[name = habitacion]")
 
-			/* 4) Pensar una solucion logica para esconder todas las habitaciones cada vez que sea necesario */
+			menu.onchange = mostrarOpcion
 
 			function mostrarOpcion(){
-				/* 5) Obtener la opción seleccionada */
+			
+				for (let i = 0; i < habitaciones.length; i++) {
 
-				/* 6) Seleccionar la habitación correspondiente usando un selector dinámico */
+					if(habitaciones[i]. == menu.value){
+						habitaciones[i].classList.remove("esconder")
+					}else{
+						habitaciones[i].classList.add("esconder")
+					}
 
-				/* 7) Asignar la clase correspondiente */
-				
+				}
+
 			}
+
+
 		</script>
 	</body>
 </html>
