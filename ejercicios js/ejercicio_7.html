@@ -66,19 +66,38 @@
 
 			menu.onchange = mostrarOpcion
 
-			function mostrarOpcion(){
-			
-				for (let i = 0; i < habitaciones.length; i++) {
+			esconderTodo()			
 
-					if(habitaciones[i]. == menu.value){
-						habitaciones[i].classList.remove("esconder")
-					}else{
-						habitaciones[i].classList.add("esconder")
-					}
 
+			function esconderTodo(){
+
+				for (var i = 0; i < habitaciones.length; i++) {
+					habitaciones[i].classList.add("esconder")
 				}
 
 			}
+
+
+			function mostrarOpcion(){
+
+				esconderTodo()
+
+				let elegida = menu.value 
+
+				if(elegida == 0){
+					return
+				}
+
+				let habitacionElegida = document.querySelector(`.habitacion-${elegida}`)
+			
+				console.log(habitacionElegida)
+
+				if(habitacionElegida != null){
+					habitacionElegida.classList.remove("esconder")
+				}
+
+			}
+
 
 
 		</script>
