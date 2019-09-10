@@ -1,241 +1,194 @@
-
-
-* {
-	outline: dotted 1px red;
+:root {
+  font-size: 62.5%;
 }
-
-
-
-
-
 body {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
-	color: #171717;
-	margin: 0;
-	overflow-x: hidden;
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size: 1.4rem;
+	color: #333333;
+  overflow-x: hidden;
 }
-
 header {
-	background-color: #171717;
-	position: relative;
-	padding: 10px;
-	overflow: hidden; /* agregado para devolver el header */
+	background-color: #333333;
+	padding: 1.5rem;
+	overflow: hidden;
 }
-
-/* el h1 que esta dentro del header: header h1 {}*/
 header h1 {
-	margin: 0;
-	color: #D9D9D9;
-	float: left;  /* agregado para alinear a la derecha */
-	background-image: url("../img/logo.png"); /* imagen de fondo (logo), con o sin comillas funciona */
-	background-repeat: no-repeat; /* donde repite la imagen */
-	padding-left: 75px;
+  font-size: 2.6rem;
+	color: #FFFFFF;
+	float: left;
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+  background-size: contain;
+	padding-left: 6.5rem;
+  font-weight: 700;
+}
+header a {
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: .5rem;
 	display: block;
 }
-
-
-a {
-	text-decoration: none;
-	color: #000000;
+header a:hover {
+	background-color: #FFFFFF;
+	color: #333333;
 }
-
-header a {
-	text-decoration: none;
-	color: #D9D9D9;
+nav {
+	float: right;
 }
-
-
-nav ul {
-	list-style-type: none; /* estilo del item de la lista */
-	margin: 0;
-	padding: 0
-}
-
 nav ul li {
-	display: inline-block; /* los paso a elementos de linea-bloque para que se vean en horizontal */
+	display: inline-block;
 }
-
-nav ul li a {
-	padding: 10px;
-	text-decoration: none;
-}
-
-nav ul li a:hover {
-	background-color: #D9D9D9;
-	color: #171717;
-	text-decoration: none;
-}
-
-
 img {
 	display: block;
 	width: 100%;
 }
-
 #noticias-destacadas {
-	width: calc(100vw * 3); /* funcion calc() de calculo. para todos los elementos que tengan unidad de medida */
-	background-color: #171717;
-	overflow: hidden;
-	position: relative;
-	animation: 15s slider infinite; /* tiempo, que animacion, que hacer despues */
+  width: calc(100vw * 3);
+  overflow: hidden;
+  animation: 15s slider infinite;
+  position: relative;
 }
-
-
 #noticias-destacadas figure {
-	width: 100vw;
-	float: left;
-	
+  float: left;
+  position: relative;
+  width: 100vw;
 }
-
-#noticias-destacadas figcaption {
-	background-color: #171717;
-	padding: 20px;
+#noticias-destacadas figcaption { /* <-- busca al elemento con id="noticias-destacadas" */
+	background-color: #333333;
+	padding: 1.5rem;
 }
-
-#noticias-destacadas figcaption h2 {
-	color: white;
-	font-size: 42px;
+#noticias-destacadas h2 {
+	color: #FFFFFF;
+	font-size: 3.2rem;
 	font-weight: 700;
 }
-
-.noticia-img {
-	width: 100%;
-}
-
-.noticia-txt {
-	width: 100%;
-}
-
 .noticia {
+	border-bottom: solid 1px #D9D9D9;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: stretch;
-	margin: 10px;
-	padding: 10px;
-	border-bottom: solid 1px #CCC; /* linea divisoria de noticias */
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	margin: 1rem;
 }
-
-
-
 .noticia:last-child {
-	border:  none;
+	border: none;
 }
-
-/* afecta al tercer elemento
-.noticia:nth-of-type(3) {
-	border:  none;
+.noticia-img {
+	width: 30%;
 }
-*/
-
-
-article div h3 {
-	display: flex;
-	font-size: 25px;
-	margin-bottom: 10px;
-	margin-top: 10px;
+.noticia-txt {
+	width: 65%
 }
-
-
-.texto-noticia {
-	margin-top: 10px;
-	margin-bottom: 10px;
+.noticia-txt h3 {
+	font-weight: 700;
+	font-size: 2.8rem;
 }
-
-
-
-#tabla-posiciones table {
-	margin: auto;
-	width: 60%;
+.noticia-txt a {
+	text-decoration: none;
+	color: #000;
 }
-
-#tabla-posiciones td, #tabla-posiciones th {
-	padding: 5px;
+.noticia-txt p {
+	font-size: 16px;
+}
+.noticia-txt h3,
+.noticia-txt p {
+	line-height: 1.5;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+#tabla-posiciones td,
+#tabla-posiciones th {
+	padding: 1.2rem;
+}
+#tabla-posiciones th {
+	background-color: #FF0000;
+	color: #FFFFFF;
+	font-size: 2rem;
+	font-weight: 700;
+}
+#tabla-posiciones td {
+	background-color: #D9D9D9;
 	vertical-align: middle;
 }
-
-#tabla-posiciones th {
-	background-color: red;
-	font-weight: 600; /* negrita (bold) */
-	color: white;
-	font-size: 18px;
-}
-
-#tabla-posiciones td {
-	background-color: #CCC;
-	font-size: 15px;
-}
-
-#tabla-posiciones td:nth-of-type(odd) {
-	font-weight: bold;
-	font-size: 18px;
-	text-align: center;
-}
-
 #tabla-posiciones tr {
-	border-bottom: solid 1px #171717;
+	border-bottom: solid 1px #999999;
 }
-
+#tabla-posiciones tr:first-child,
 #tabla-posiciones tr:last-child {
 	border: none;
 }
-
-#tabla-posiciones td:nth-of-type(even) span {
-	color: darkgreen;
-	font-weight: bold;
+#tabla-posiciones table {
+	width: 60rem;
+	margin: auto;
 }
-
-
-footer {
-	background-color: #171717;
-	padding: 20px;
-	color: #D9D9D9;
+#tabla-posiciones td:nth-of-type(odd) {
+	font-weight: 700;
+	font-size: 2.4rem;
 	text-align: center;
-	margin-top: 20px;
-	}
-
-
-/* poner iconos en el menu */
-
-
-
-
-
-
-
-/* animaciones css */
-
-@keyframes slider {
-
-	0% {
-		left: 0;
-	}
-
-	10% {
-		left: 0;
-	}
-
-	30% {
-		left: -100vw;
-	}
-	
-	50% {
-		left: -100vw;
-	}
-
-	70% {
-		left: -200vw;
-	}
-
-	90% {
-		left: -200vw;
-	}
-
-	100%{
-		left: 0;
-	}
-
 }
-
-
+#tabla-posiciones td:nth-of-type(even) span {
+	font-weight: 700;
+	color: #008899;
+}
+footer {
+	background-color: #333333;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 1.5rem;
+	margin-top: 3rem;
+}
+/* Animaciones CSS */
+@keyframes slider {
+    0% { left: 0 }
+   20% { left: 0 }
+   40% { left: -100vw }
+   60% { left: -100vw }
+   80% { left: -200vw }
+  100% { left: -200vw }
+}
+/* Media Queries */
+@media screen and (max-width: 640px){
+	nav {
+		display: none;
+		float: none;
+		clear: both;
+		text-align: center;
+	}
+	nav ul li {
+		display: block;
+		padding: .5rem;
+	}
+	button {
+		display: block;
+		float: right;
+		border: none;
+		padding: .5rem;
+		font-size: 2rem;
+		line-height: 1;
+		font-weight: 700;
+		color: #FFFFFF;
+		background-color: transparent;
+		cursor: pointer;
+	}
+  button:hover + nav,
+	button:focus + nav {
+		display: block;
+	}
+  #noticias-destacadas h2 {
+    font-size: 1.4rem;
+  }
+	.noticia {
+		flex-direction: column;
+	}
+	.noticia-img,
+	.noticia-txt {
+		width: 100%;
+	}
+  .noticia-txt h3 {
+    font-size: 1.8rem;
+  }
+	#tabla-posiciones table {
+		width: 90%;
+	}
+}
