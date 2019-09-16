@@ -255,18 +255,16 @@
 
 					console.log("despues del parseo")
 
-					let usuarios = JSON.parse(response)
+					let datos = JSON.parse(response)
 
-					console.log(usuarios)
+					console.log(datos)
 
 					//procesar los datos
-					usuarios.data.forEach( function(usuario){
+					//usuarios.noticias(nombre del json).foreach(function(objeto del json))
+					datos.noticias.forEach( function(noticia){
 
 						//manipular los datos individualizados, son los campos del JSON
-						console.log(`usuario: ${usuario.first_name}`)	
-						console.log(`correo: ${usuario.email}`)
-
-
+						console.log(`Noticia del dia ${noticia.titulo} \n por ${noticia.autor}`)
 
 					})	
 
