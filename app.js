@@ -12,7 +12,7 @@ http.createServer(procesar).listen(80)
 //(request, response)
 function procesar(peticion, respuesta){
 
-	//imprimo en el navegador	
+	//imprimo en el navegador
 	respuesta.writeHead(200, {
 
 		"Content-Type" : "text/html"
